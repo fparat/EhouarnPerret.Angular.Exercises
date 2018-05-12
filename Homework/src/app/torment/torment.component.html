@@ -1,0 +1,15 @@
+<button (click)="onTorment()">Torment</button>
+
+<div [class.hidden]="!isCursed">
+  <blockquote>
+    <p>This the water, and this the well.</p>
+    <p>Drink full, and descend.</p>
+    <p>The horse is the white of the eye, and dark within.</p>
+  </blockquote>
+</div>
+
+<div>
+  <div *ngFor="let click of clicks; let i=index">
+    <span [class.cursed]="(i + 1) >= this.curseThreshold">{{click}}...</span>
+  </div>
+</div>

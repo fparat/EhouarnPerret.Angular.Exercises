@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { UsernameInputComponent } from './username-input/username-input.component';
+import { TormentComponent } from './torment/torment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SuccessAlertComponent,
     WarningAlertComponent,
-    UsernameInputComponent
+    UsernameInputComponent,
+    TormentComponent
   ],
   imports: [
     BrowserModule,
