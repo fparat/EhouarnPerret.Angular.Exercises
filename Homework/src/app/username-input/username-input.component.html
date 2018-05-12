@@ -1,0 +1,9 @@
+<p>
+  <label>Username: </label>
+  <input type="text" [(ngModel)]="username">
+  <button (click)="onReset()" [disabled]="!username">Reset</button>
+</p>
+
+<div *ngIf="username">
+  Hello, {{username}}.
+</div>
